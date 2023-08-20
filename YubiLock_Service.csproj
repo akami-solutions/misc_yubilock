@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-YubiLock_Service-00987946-ABCB-48DB-B17D-23B03C4F61D2</UserSecretsId>
+        <Version>1.0.3</Version>
+        <Title>Yubi Lock</Title>
+        <Authors>Satowa Network Infra</Authors>
+        <Copyright>CC-BY-NC-ND 4.0 International</Copyright>
+        <RepositoryUrl>https://github.com/Satowa-Network/yubiLock.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>signation.snk</AssemblyOriginatorKeyFile>
+        <ApplicationIcon>satowa-logo-transparent.ico</ApplicationIcon>
+        <PackageIcon>satowa-logo-transparent.ico</PackageIcon>
+        <NeutralLanguage>en</NeutralLanguage>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="7.0.1" />
+        <PackageReference Include="Microsoft.UI.Xaml" Version="2.8.5" />
+        <PackageReference Include="System.Management" Version="7.0.2" />
+    </ItemGroup>
+</Project>
