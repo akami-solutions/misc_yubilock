@@ -16,6 +16,10 @@
         <ApplicationIcon>satowa-logo-transparent.ico</ApplicationIcon>
         <PackageIcon>satowa-logo-transparent.ico</PackageIcon>
         <NeutralLanguage>en</NeutralLanguage>
+        <PackageProjectUrl>https://packages.satowa-network.eu/yubiLock/windows/latest/</PackageProjectUrl>
+        <IsPackable>true</IsPackable>
+        <Description>A service that locks your Workstation as soon as you unplug your YubiKey.
+(No driver or other tools needs to be installed)</Description>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
