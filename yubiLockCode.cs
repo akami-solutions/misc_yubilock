@@ -9,11 +9,12 @@ public class yubiLockCode
     [DllImport("user32.dll", SetLastError = true)]
     static extern bool LockWorkStation();
 
-    [DllImport("user32.dll", CharSet = CharSet.Unicode)]
-    static extern int MessageBox(IntPtr hWnd, string text, string caption, uint type);
+    //[DllImport("user32.dll", CharSet = CharSet.Unicode)]
+    //static extern int MessageBox(IntPtr hWnd, string text, string caption, uint type);
 
     static bool LockWorkStationWrapper()
     {
+        // LockWorkStation()
         return LockWorkStation();
     }
 
@@ -32,7 +33,7 @@ public class yubiLockCode
                 if (state && !alreadyFinished)
                 {
                     alreadyFinished = true;
-                    MessageBox(IntPtr.Zero, "YubiKey Detected security passed!", "Satowa Network Security Systems", 0);
+                    //MessageBox(IntPtr.Zero, "YubiKey Detected security passed!", "Satowa Network Security Systems", 0);
                 }
             }
             else
@@ -63,7 +64,7 @@ public class yubiLockCode
                 if (state && !alreadyFinished)
                 {
                     alreadyFinished = true;
-                    MessageBox(IntPtr.Zero, "YubiKey Detected security passed!", "Satowa Network Security Systems", 0);
+                    //MessageBox(IntPtr.Zero, "YubiKey Detected security passed!", "Satowa Network Security Systems", 0);
 
                 }
             };
