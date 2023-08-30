@@ -1,0 +1,14 @@
+﻿PackageIdentifier: SatowaNetwork.YubiLock
+PackageVersion: 1.0.2.0
+PackageLocale: en-US
+version: 1.0.2.0
+Publisher: Satowa Network
+PublisherUrl: https://satowa-network.eu
+Author: ["SlushUwU"]
+PackageName: YubiLock
+License: CC-BY-NC-ND 4.0 International
+LicenseUrl: https://creativecommons.org/licenses/by-nc-nd/4.0/
+ShortDescription: A program that locks your Computer as soon as you unplug your Yubikey
+DefaultLocale: en-US
+ManifestType: defaultLocale
+ManifestVersion: 1.5.0

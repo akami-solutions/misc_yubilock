@@ -1,0 +1,5 @@
+﻿PackageIdentifier: SatowaNetwork.YubiLock # The package unique identifier
+PackageVersion: 1.0.2.0 # The package version
+DefaultLocale: en-US         # The default package meta-data locale
+ManifestType: version   # The manifest type
+ManifestVersion: 1.5.0  # The manifest syntax version
