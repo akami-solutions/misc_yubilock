@@ -1,5 +1,5 @@
 using YubiLock_Service;
-
+//System.Diagnostics.Debugger.Launch();
 IHost host = Host.CreateDefaultBuilder(args)
     .UseWindowsService(options =>
     {
