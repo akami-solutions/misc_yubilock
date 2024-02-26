@@ -1,4 +1,7 @@
+using System.Net.Mime;
+
 namespace YubiLock_Service;
+
 
 public class Worker : BackgroundService
 {
@@ -8,16 +11,24 @@ public class Worker : BackgroundService
     {
         _logger = logger;
     }
-
+    
+    
+    
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        await Task.Delay(Timeout.Infinite, stoppingToken);
+        
         while (!stoppingToken.IsCancellationRequested)
         {
             _logger.LogInformation("YubiLock running at: {time}", DateTimeOffset.Now);
             try
             {
-                yubiLockCode.yubiLock();
                 _logger.LogInformation("Started YubiLock Service Code");
+                await Task.Run(() =>
+                {
+                    yubiLockCode.yubiLock();
+                });
+                await Task.Delay(1_000, stoppingToken);
             }
             catch (Exception e)
             {

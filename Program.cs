@@ -1,6 +1,14 @@
 using YubiLock_Service;
 //System.Diagnostics.Debugger.Launch();
-IHost host = Host.CreateDefaultBuilder(args)
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddWindowsService(options => options.ServiceName = "YubiLock Service");
+builder.Services.AddHostedService<Worker>();
+IHost host = builder.Build();
+await host.RunAsync();
+
+
+
+/*IHost host = Host.CreateDefaultBuilder(args)
     .UseWindowsService(options =>
     {
         options.ServiceName = "YubiLock Service";
@@ -12,4 +20,4 @@ IHost host = Host.CreateDefaultBuilder(args)
     })
     .Build();
 
-await host.RunAsync();
+await host.RunAsync();*/

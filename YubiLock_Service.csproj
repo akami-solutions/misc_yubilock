@@ -7,19 +7,21 @@
         <UserSecretsId>dotnet-YubiLock_Service-00987946-ABCB-48DB-B17D-23B03C4F61D2</UserSecretsId>
         <Version>1.0.3</Version>
         <Title>Yubi Lock</Title>
-        <Authors>Satowa Network Infra</Authors>
+        <Authors>Akami Solutions</Authors>
         <Copyright>CC-BY-NC-ND 4.0 International</Copyright>
         <RepositoryUrl>https://github.com/Satowa-Network/yubiLock.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <SignAssembly>true</SignAssembly>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
         <AssemblyOriginatorKeyFile>signation.snk</AssemblyOriginatorKeyFile>
         <ApplicationIcon>satowa-logo-transparent.ico</ApplicationIcon>
         <PackageIcon>satowa-logo-transparent.ico</PackageIcon>
         <NeutralLanguage>en</NeutralLanguage>
-        <PackageProjectUrl>https://packages.satowa-network.eu/yubiLock/windows/latest/</PackageProjectUrl>
-        <IsPackable>true</IsPackable>
-        <Description>A service that locks your Workstation as soon as you unplug your YubiKey.
-(No driver or other tools needs to be installed)</Description>
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <LangVersion>latest</LangVersion>
+        <SelfContained>true</SelfContained>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
