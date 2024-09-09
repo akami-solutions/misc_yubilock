@@ -1,3 +1,7 @@
+> [!CAUTION]
+> # DISCONTINUED
+The project YubiLock maintained by @Akama Aka has entered the End of Life on 09.09.2024. There will be **no** more updates to this project. The reason for the discontinuation of support is the lost motivation and the conflicts that existed on the Discord platform. 
+
 # YubiLock Open Source
 
 YubiLock, formerly a project of Satowa Network, has been acquired by Akami Solutions and released as open source. It is a Windows program that aims to improve the security of Windows systems.
@@ -15,5 +19,3 @@ Since February 26, 2024, YubiLock has been under further development by Akami So
 # Contributions and Pull Requests:
 
 The project is open to contributions from third parties. If you want to propose and add your changes and improvements with a pull request, this is allowed.
-
-(Keep the markdown arguments)
